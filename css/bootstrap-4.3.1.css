@@ -100,9 +100,9 @@ abbr[data-original-title] {
 }
 
 address {
-  margin-bottom: 1rem;
-  font-style: normal;
-  line-height: inherit;
+    margin-bottom: 1rem;
+    font-style: normal;
+    line-height: inherit;
 }
 
 ol,
@@ -181,6 +181,7 @@ a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
 a:not([href]):not([tabindex]):focus {
     outline: 0;
     color: #CCC479;
+    margin-left: 0px;
 }
 
 pre,
@@ -678,6 +679,14 @@ pre code {
     flex: 0 0 50%;
     max-width: 50%;
     color: #CCC479;
+    -webkit-box-shadow: 1em 0px #000000;
+    box-shadow: 1em 0px #000000;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: #000000;
+    background-image: -webkit-linear-gradient(270deg,rgba(204,196,121,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(204,196,121,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(204,196,121,1.00) 0%,rgba(0,0,0,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(204,196,121,1.00) 0.00%,rgba(0,0,0,1.00) 100%);
 }
 
 .col-7 {
@@ -716,6 +725,12 @@ pre code {
     max-width: 100%;
     background-color: #000000;
     color: #CCC479;
+    padding-left: 11px;
+    opacity: 1;
+    margin-left: 1px;
+    background-clip: padding-box;
+    -webkit-box-shadow: inset 100em 0px #000000;
+    box-shadow: inset 100em 0px #000000;
 }
 
 .order-first {
@@ -6421,15 +6436,16 @@ a.close.disabled {
 }
 
 .carousel-caption {
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
+    position: absolute;
+    right: 15%;
+    bottom: 34px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    height: 48px;
 }
 
 @-webkit-keyframes spinner-border {
@@ -10057,4 +10073,11 @@ a.text-dark:hover, a.text-dark:focus {
 .p1 {
 }
 .shop {
+}
+
+@media (min-width:349.5px){
+.footer1 {
+    background-color: #00000;
+}
+
 }
